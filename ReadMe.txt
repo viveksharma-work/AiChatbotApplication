@@ -8,7 +8,7 @@ The memory demo that'll impress interviewers:
 Create a session:
 Body → raw → JSON:
 json{
-  "userId": "vivek",
+  "userId": "",
   "systemPrompt": "You are a helpful assistant."
 }
 *Copy the sessionId from the response.
@@ -18,11 +18,11 @@ POST http://localhost:8080/chat
 Body:
 {
   "sessionId": "paste-the-session-id-you-got-above",
-  "message": "My name is Vivek"
+  "message": "My name is abcd"
 }
 
 Send: "What is my name?"
-AI replies: "Your name is Vivek"
+AI replies: "Your name is abcd"
 
 #In-case of error's
 There are some common errors
